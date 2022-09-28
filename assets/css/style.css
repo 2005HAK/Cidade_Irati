@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left, rgba(100, 189, 82, 0.5),rgb(247, 238, 74, 0.5));
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.icone {
+    padding: 0;
+    margin: 10px;  
+    width: 8%;
+}
+
+#logo {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.tituloPag {
+    margin-left: 10px;
+    color: white;
+    align-self: center;
+    font-size: 30pt;
+    width: 40%;
+}
+
+.links {
+    width: 50%;
+    align-self: center;
+}
+
+.links a{
+    color:white;
+    text-decoration: none;
+    float: right;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: rgba(230, 233, 53);
+    border-bottom: 1px solid rgba(230, 233, 53);
+}
+
+.principal {
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+}
+table {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(207, 207, 207);
+    width: 40%;
+}
+
+td {
+    padding: 10px;
+    font-size: 16pt;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.especificacao {
+    font-size: 9pt;
+}
+
+.referencia {
+    margin-top: 3px;
+    font-size: 10pt;
+}
+
+.referencia a {
+    text-decoration: none;
+    color: black;
+}
+footer {
+    background-color: black;
+    color:white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.rowImage {
+    display: flex;
+    flex-direction: row;
+}
