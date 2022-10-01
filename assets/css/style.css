@@ -1,3 +1,4 @@
+/*tags principais*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to left, rgba(100, 189, 82, 0.5),rgb(247, 238, 74, 0.5));
@@ -7,15 +8,62 @@ body {
 header {
     background-color: black;
     border-radius: 5px;
+    margin: 5px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color:white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+/*fim das tags principais*/
+
+/*cabeçalho*/
+.header{
     display: flex;
     flex-direction: row;
-    margin: 5px;
+    border-bottom: 1.5px solid rgb(255, 255, 255);
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    width: 45%;
+    align-self: center;
+}
+
+
+.header a:hover {
+    color: yellow;
 }
 
 .icone {
     padding: 0;
     margin: 10px;  
-    width: 8%;
+    width: 10%;
 }
 
 #logo {
@@ -30,40 +78,57 @@ header {
     font-size: 30pt;
     width: 40%;
 }
+/*fim do cabeçalho*/
 
-.links {
-    width: 50%;
-    align-self: center;
+/*barra de navegação*/
+nav {
+    margin-top: 10px;
 }
 
-.links a{
-    color:white;
+nav a {
+    color: white;
     text-decoration: none;
-    float: right;
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
     font-weight: bold;
 }
 
-.links a:hover {
+nav a:hover {
     color: rgba(230, 233, 53);
-    border-bottom: 1px solid rgba(230, 233, 53);
+    border-bottom: 2px solid rgba(230, 233, 53);
+}
+/*fim da barra de navegaçao*/
+
+.pontos {
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
 }
 
-.principal {
-    background-color: white;
+.imagensPontosTuristicos {
+    overflow: hidden;
+    width: 300px;
     margin: 5px;
-    border-radius: 5px;
-    padding: 10px;
+    -moz-transition: all 0.25s;
+    transition: all 0.25s;
+    
+}
+
+.imagensPontosTuristicos:hover {
+    -moz-transform: scale(1.025);
+    -webkit-transform: scale(1.025);
+    transform: scale(1.025);
 }
 
 p {
     text-align: justify;
+    margin: 5px;
 }
+
 table {
     border: 1px solid rgb(0, 0, 0);
     background-color: rgb(207, 207, 207);
-    width: 40%;
+    width: 80%;
 }
 
 td {
@@ -78,23 +143,11 @@ td {
 }
 
 .referencia {
-    margin-top: 3px;
-    font-size: 10pt;
+    margin: 5px;
+    font-size: 8pt;
 }
 
 .referencia a {
     text-decoration: none;
     color: black;
-}
-footer {
-    background-color: black;
-    color:white;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-.rowImage {
-    display: flex;
-    flex-direction: row;
 }
