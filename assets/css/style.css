@@ -7,23 +7,39 @@ body {
 
 header {
     background-color: black;
-    border-radius: 5px;
-    margin: 5px;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 10px;
+    padding: 0 20% 0 20%;
 }
 
 article {
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin: 5px;
     border-radius: 5px;
     padding: 10px;
     padding-left: 20%;
     padding-right: 20%;
 }
+/*barra de navegação*/
+nav {
+    background-color: black;
+    padding: 10px 20% 10px 20%;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgba(230, 233, 53);
+    border-bottom: 2px solid rgba(230, 233, 53);
+    background-color: rgb(24, 24, 24);
+}
+/*fim da barra de navegaçao*/
 
 footer {
     display: flex;
@@ -32,8 +48,6 @@ footer {
     background-color: black;
     color:white;
     padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -44,20 +58,6 @@ footer {
     display: flex;
     flex-direction: row;
     border-bottom: 1.5px solid rgb(255, 255, 255);
-}
-
-.header a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    text-align: right;
-    width: 45%;
-    align-self: center;
-}
-
-
-.header a:hover {
-    color: yellow;
 }
 
 .icone {
@@ -80,23 +80,6 @@ footer {
 }
 /*fim do cabeçalho*/
 
-/*barra de navegação*/
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: rgba(230, 233, 53);
-    border-bottom: 2px solid rgba(230, 233, 53);
-}
-/*fim da barra de navegaçao*/
 
 h3 {
     margin: 5px;
@@ -106,7 +89,7 @@ h3 {
     background-color: rgb(241, 241, 241);
     margin: 5px;
     padding: 5px;
-    box-shadow: 0 0.5px 5px black;
+    box-shadow: 0 0.5px 5px rgb(80, 80, 80);
 }
 
 .territorio img {
@@ -126,14 +109,12 @@ h3 {
     overflow: hidden;
     width: 300px;
     margin: 5px;
-    -moz-transition: all 0.25s;
     transition: all 0.25s;
 }
 
 .imagensPontosTuristicos:hover {
-    -moz-transform: scale(1.025);
-    -webkit-transform: scale(1.025);
-    transform: scale(1.025);
+    transform: scale(0.975);
+    box-shadow: 0 0 5px black;
 }
 
 p {
@@ -167,4 +148,30 @@ td {
 .referencia a {
     text-decoration: none;
     color: black;
+}
+
+#top-button {
+    position: sticky;
+    right: 0;
+    bottom: 0;
+}
+
+#top-button img {
+    width: 8%;
+    opacity: 0.45;
+}
+
+#top-button figure {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+@media screen and (max-width: 600px){
+    header {
+        padding: 0 0 0 0;
+    }
+    .tituloPag {
+        width: 80%;
+    }
 }
