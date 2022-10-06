@@ -14,7 +14,6 @@ article {
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 5px;
     padding: 10px;
     padding-left: 20%;
     padding-right: 20%;
@@ -80,7 +79,6 @@ footer {
 }
 /*fim do cabeçalho*/
 
-
 h3 {
     margin: 5px;
 }
@@ -100,6 +98,7 @@ h3 {
 .territorio {
     margin: 5px;
 }
+
 .conteudoPontos {
     display: flex;
     flex-direction: row;
@@ -167,11 +166,40 @@ td {
     text-align: right;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
     header {
         padding: 0 0 0 0;
     }
     .tituloPag {
         width: 80%;
+    }
+    .icone {
+        padding: 0;
+        margin: 10px;  
+        width: 20%;
+    }
+
+    nav {
+        padding: 10px 0 10px 0;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 2px;
+    }
+
+    table {
+        margin: 5px;
+        width: 98%;
+    }
+
+    .conteudoPontos {
+        flex-direction: column;
     }
 }
