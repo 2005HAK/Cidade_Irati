@@ -3,6 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to left, rgba(100, 189, 82, 0.5),rgb(247, 238, 74, 0.5));
     margin: 0 auto;
+    min-width: 630px;
 }
 
 header {
@@ -46,9 +47,7 @@ footer {
     align-items: center;
     background-color: black;
     color:white;
-    padding: 10px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 10px 20% 10px 20%;
 }
 /*fim das tags principais*/
 
@@ -62,7 +61,7 @@ footer {
 .icone {
     padding: 0;
     margin: 10px;  
-    width: 10%;
+    width: 15%;
 }
 
 #logo {
@@ -75,7 +74,7 @@ footer {
     color: white;
     align-self: center;
     font-size: 30pt;
-    width: 40%;
+    width: 75%;
 }
 /*fim do cabeçalho*/
 
@@ -99,13 +98,12 @@ h3 {
     margin: 5px;
 }
 
-.conteudoPontos {
+.conteudoTopicos {
     display: flex;
     flex-direction: row;
 }
 
 .imagensPontosTuristicos {
-    overflow: hidden;
     width: 300px;
     margin: 5px;
     transition: all 0.25s;
@@ -119,6 +117,11 @@ h3 {
 p {
     text-align: justify;
     margin: 5px;
+}
+
+p::selection {
+    background-color: rgb(39, 28, 87);
+    color: rgb(62, 255, 62);
 }
 
 table {
@@ -150,14 +153,18 @@ td {
 }
 
 #top-button {
-    position: sticky;
-    right: 0;
-    bottom: 0;
+    position: fixed;
+    right: 5px;
+    bottom: 40px;
 }
 
 #top-button img {
-    width: 8%;
-    opacity: 0.45;
+    width: 15%;
+    opacity: 0.6;
+}
+
+#top-button img:hover {
+    opacity: 1;
 }
 
 #top-button figure {
@@ -166,17 +173,20 @@ td {
     text-align: right;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 820px){
+
     header {
         padding: 0 0 0 0;
     }
+
     .tituloPag {
-        width: 80%;
+        width: 90%;
+        font-size: 25pt;
     }
+
     .icone {
         padding: 0;
-        margin: 10px;  
-        width: 20%;
+        min-width: 75px;
     }
 
     nav {
@@ -199,7 +209,19 @@ td {
         width: 98%;
     }
 
-    .conteudoPontos {
+    .conteudoTopicos {
         flex-direction: column;
+    }
+
+    td {
+        font-size: 12pt;
+    }
+
+    #top-button {
+        visibility: hidden;
+    }
+
+    footer {
+        padding: 10px;
     }
 }
