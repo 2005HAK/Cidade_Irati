@@ -1,13 +1,29 @@
 /*tags principais*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to left, rgba(100, 189, 82, 0.5),rgb(247, 238, 74, 0.5));
+    background-image: linear-gradient(to left, rgba(100, 189, 82, 0.5), rgb(247, 238, 74, 0.5));
     margin: 0 auto;
-    min-width: 630px;
+    min-width: 800px;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(134, 134, 134);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(59, 59, 59);
 }
 
 header {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     padding: 0 20% 0 20%;
 }
 
@@ -19,12 +35,15 @@ article {
     padding-left: 20%;
     padding-right: 20%;
 }
+
 /*barra de navegação*/
 nav {
-    background-color: black;
-    padding: 10px 20% 10px 20%;
+    background-color: rgb(43, 43, 43);
+    padding: 10px 5% 10px 5%;
     position: sticky;
     top: 0;
+    text-align: center;
+    z-index: 1;
 }
 
 nav a {
@@ -39,6 +58,7 @@ nav a:hover {
     border-bottom: 2px solid rgba(230, 233, 53);
     background-color: rgb(24, 24, 24);
 }
+
 /*fim da barra de navegaçao*/
 
 footer {
@@ -46,22 +66,27 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: black;
-    color:white;
+    color: white;
     padding: 10px 20% 10px 20%;
 }
+
 /*fim das tags principais*/
 
 /*cabeçalho*/
-.header{
+.header {
     display: flex;
     flex-direction: row;
-    border-bottom: 1.5px solid rgb(255, 255, 255);
+    padding: 0;
+}
+
+h1 {
+    font-family: cursive;
 }
 
 .icone {
     padding: 0;
-    margin: 10px;  
-    width: 15%;
+    margin: 10px;
+    width: 90px;
 }
 
 #logo {
@@ -76,6 +101,7 @@ footer {
     font-size: 30pt;
     width: 75%;
 }
+
 /*fim do cabeçalho*/
 
 h3 {
@@ -155,12 +181,12 @@ td {
 #top-button {
     position: fixed;
     right: 5px;
-    bottom: 40px;
+    bottom: 5px;
 }
 
 #top-button img {
-    width: 15%;
-    opacity: 0.6;
+    width: 20%;
+    opacity: 0.5;
 }
 
 #top-button img:hover {
@@ -173,28 +199,18 @@ td {
     text-align: right;
 }
 
-@media screen and (max-width: 820px){
+@media screen and (max-width: 820px) {
 
     header {
         padding: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .tituloPag {
         width: 90%;
         font-size: 25pt;
-    }
-
-    .icone {
-        padding: 0;
-        min-width: 75px;
-    }
-
-    nav {
-        padding: 10px 0 10px 0;
-    }
-
-    nav a {
-        padding: 10px;
     }
 
     article {
