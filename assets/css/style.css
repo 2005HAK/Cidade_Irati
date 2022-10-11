@@ -103,9 +103,12 @@ h1 {
 }
 
 /*fim do cabeçalho*/
+h2 {
+    margin-left: 5px;
+}
 
 h3 {
-    margin: 5px;
+    margin-left: 5px;
 }
 
 .contentBox {
@@ -135,6 +138,11 @@ h3 {
     transition: all 0.25s;
 }
 
+.imagensEventos {
+    width: 300px;
+    margin: 5px;
+}
+
 .imagensPontosTuristicos:hover {
     transform: scale(0.975);
     box-shadow: 0 0 5px black;
@@ -143,6 +151,7 @@ h3 {
 p {
     text-align: justify;
     margin: 5px;
+    line-height: 25px;
 }
 
 p::selection {
@@ -162,6 +171,9 @@ td {
     font-size: 16pt;
     border-bottom: 1px solid gray;
     border-right: 1px solid gray;
+}
+ul {
+    line-height: 30px;
 }
 
 .especificacao {
