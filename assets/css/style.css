@@ -46,9 +46,9 @@ nav {
     z-index: 1;
 }
 
+
 nav a {
     color: white;
-    text-decoration: none;
     padding: 10px;
     font-weight: bold;
 }
@@ -60,6 +60,10 @@ nav a:hover {
 }
 
 /*fim da barra de navegaçao*/
+
+a {
+    text-decoration: none;
+}
 
 footer {
     display: flex;
@@ -118,29 +122,31 @@ h3 {
     box-shadow: 0 0.5px 5px rgb(80, 80, 80);
 }
 
-.territorio img {
-    width: 100%;
-    border-radius: 2px;
-}
-
-.territorio {
-    margin: 5px;
-}
-
-.conteudoTopicos {
+.ladoalado {
     display: flex;
     flex-direction: row;
 }
 
+picture {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .imagensPontosTuristicos {
-    width: 300px;
+    width: 400px;
     margin: 5px;
     transition: all 0.25s;
 }
 
-.imagensEventos {
-    width: 300px;
+.imagensSemEfeitos {
+    width: 400px;
     margin: 5px;
+}
+
+.imagensDados {
+    width: 95%;
 }
 
 .imagensPontosTuristicos:hover {
@@ -148,29 +154,28 @@ h3 {
     box-shadow: 0 0 5px black;
 }
 
-p {
+p, blockquote {
     text-align: justify;
     margin: 5px;
     line-height: 25px;
 }
 
-p::selection {
-    background-color: rgb(39, 28, 87);
-    color: rgb(62, 255, 62);
-}
-
 table {
     margin: 5px;
     border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(214, 214, 214);
     width: 80%;
 }
 
 td {
-    padding: 10px;
-    font-size: 16pt;
+    padding: 5px;
+    font-size: 14pt;
     border-bottom: 1px solid gray;
     border-right: 1px solid gray;
+}
+
+th {
+    font-size: 12pt;
 }
 ul {
     line-height: 30px;
@@ -181,6 +186,7 @@ ul {
 }
 
 .referencia {
+    width: 400px;
     margin: 5px;
     font-size: 8pt;
 }
