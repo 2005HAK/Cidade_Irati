@@ -6,8 +6,8 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to left, rgba(100, 189, 82, 0.5), rgb(247, 238, 74, 0.5));
-    margin: 0 auto;
-    min-width: 800px;
+    margin: 0;
+    min-width: 780px;
 }
 
 body::-webkit-scrollbar {
@@ -22,8 +22,9 @@ body::-webkit-scrollbar-thumb {
     background-color: rgb(59, 59, 59);
 }
 
-header {
-    background-color: rgb(0, 0, 0);
+header, footer {
+    background-color: black;
+    color: white;
     padding: 0 20% 0 20%;
 }
 
@@ -31,11 +32,8 @@ article {
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 10px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 10px 20% 10px 20%;
 }
-
 /*barra de navegação*/
 nav {
     background-color: rgb(43, 43, 43);
@@ -45,7 +43,6 @@ nav {
     text-align: center;
     z-index: 1;
 }
-
 
 nav a {
     color: white;
@@ -58,9 +55,7 @@ nav a:hover {
     border-bottom: 2px solid rgba(230, 233, 53);
     background-color: rgb(24, 24, 24);
 }
-
 /*fim da barra de navegaçao*/
-
 a {
     text-decoration: none;
 }
@@ -69,13 +64,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
-    color: white;
     padding: 10px 20% 10px 20%;
 }
-
 /*fim das tags principais*/
-
 /*cabeçalho*/
 .header {
     display: flex;
@@ -100,18 +91,13 @@ h1 {
 
 .tituloPag {
     margin-left: 10px;
-    color: white;
     align-self: center;
     font-size: 30pt;
-    width: 75%;
+    width: 80%;
 }
 
 /*fim do cabeçalho*/
-h2 {
-    margin-left: 5px;
-}
-
-h3 {
+h2, h3 {
     margin-left: 5px;
 }
 
@@ -122,27 +108,25 @@ h3 {
     box-shadow: 0 0.5px 5px rgb(80, 80, 80);
 }
 
-.ladoalado {
-    display: flex;
-    flex-direction: row;
-}
-
 picture {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .imagensPontosTuristicos {
-    width: 400px;
-    margin: 5px;
     transition: all 0.25s;
 }
 
-.imagensSemEfeitos {
+.imagensSemEfeitos, .imagensPontosTuristicos {
     width: 400px;
     margin: 5px;
+}
+
+.media{
+    display: flex;
+    flex-direction: row;
 }
 
 .imagensDados {
@@ -160,11 +144,23 @@ p, blockquote {
     line-height: 25px;
 }
 
+#hino, ul {
+    line-height: 30px;
+}
+
+audio {
+    border: 2px solid rgb(94, 94, 94);
+}
+
+iframe {
+    margin: 5px;
+}
+
 table {
     margin: 5px;
     border: 1px solid rgb(0, 0, 0);
     background-color: rgb(214, 214, 214);
-    width: 80%;
+    width: 98%;
 }
 
 td {
@@ -177,22 +173,17 @@ td {
 th {
     font-size: 12pt;
 }
-ul {
-    line-height: 30px;
-}
 
-.especificacao {
-    font-size: 9pt;
-}
-
-.referencia {
-    width: 400px;
-    margin: 5px;
+.especificacao, .referencia {
     font-size: 8pt;
 }
 
+.referencia {
+    max-width: 400px;
+    margin: 5px;
+}
+
 .referencia a {
-    text-decoration: none;
     color: black;
 }
 
@@ -232,19 +223,7 @@ ul {
     }
 
     article {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
         padding: 2px;
-    }
-
-    table {
-        margin: 5px;
-        width: 98%;
-    }
-
-    .conteudoTopicos {
-        flex-direction: column;
     }
 
     td {
