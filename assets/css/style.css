@@ -7,7 +7,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to left, rgba(100, 189, 82, 0.5), rgb(247, 238, 74, 0.5));
     margin: 0;
-    min-width: 780px;
+    min-width: 320px;
 }
 
 body::-webkit-scrollbar {
@@ -26,6 +26,9 @@ header,
 footer {
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0 20% 0 20%;
 }
 
@@ -39,7 +42,7 @@ article {
 /*barra de navegação*/
 nav {
     background-color: rgb(43, 43, 43);
-    padding: 10px 5% 10px 5%;
+    padding: 10px 0 10px 0;
     position: sticky;
     top: 0;
     text-align: center;
@@ -61,13 +64,6 @@ nav a:hover {
 /*fim da barra de navegaçao*/
 a {
     text-decoration: none;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20% 10px 20%;
 }
 
 /*fim das tags principais*/
@@ -151,6 +147,10 @@ blockquote {
     line-height: 25px;
 }
 
+span {
+    background-color: rgba(248, 235, 114, 0.555);
+}
+
 #hino,
 ul {
     line-height: 30px;
@@ -183,7 +183,8 @@ th {
     font-size: 12pt;
 }
 
-.especificacao, .referencia {
+.especificacao,
+.referencia {
     font-size: 8pt;
 }
 
@@ -217,7 +218,7 @@ th {
     text-align: right;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 750px) {
 
     header {
         padding: 0 0 0 0;
@@ -242,5 +243,14 @@ th {
 
     footer {
         padding: 10px;
+    }
+
+    nav {
+        padding: 2px 0 5px 0;
+    }
+
+    nav a {
+        padding: 5px;
+        font-size: 75%;
     }
 }
